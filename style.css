@@ -1,0 +1,319 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: black;
+    --border-color:white;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+.bodydiv{
+   
+    padding: 0 25px;
+}
+.firstspace{
+    width: 100%;
+    height: 15px;
+    background-color: #000;
+}
+.container{
+    position: fixed;
+    z-index: 10;
+     width: 100%;   
+    height: 80px;
+    /* background-color: antiquewhite;  */
+    display: flex;  
+    align-items: center;
+    padding: 0 30px;
+    /* justify-content: space-between; */
+    border-radius: 30px;
+    
+}a
+.navlogo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+    
+
+}
+.logo{
+    display: flex;
+    font-weight: 1000;
+    font-family: cursive;
+     background: linear-gradient(to right, #00a6ff, #000000, #00a6ff);
+    background-clip: text;
+    color: transparent;
+    
+}
+.name{
+    margin-top: 40px;
+    width: 100px;
+    font-size: 20px;
+    color: #000;
+}
+.logo .latterA{
+         font-size: 80px;
+}
+.logo .surname{
+    font-weight: 100;
+}
+nav{
+    /* margin-top: 2%; */
+    display: flex;  
+    margin-left: 40px;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(90deg,rgba(124, 186, 214, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    border-radius: 50px;
+    padding: 8px 15px;
+    
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition:color 0.3s ease;
+}
+
+a:hover{
+    color:rgb(255, 255, 255);
+}
+nav label img{
+     height: 24px;
+    cursor: pointer;
+}
+.mainpage{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    /* background-color: #22352E; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding-top: 100px; */
+}
+.maincontent{
+    margin-right: 5px;
+   
+}
+.card{
+    position: relative;
+    height: 700px;
+    width: 1200px;
+    border-radius: 12px 12px 12px 0px;
+    overflow: hidden;
+    
+    
+}
+.card {
+     background: linear-gradient(90deg, #70d6ff, #ff70a6,
+    #ff9770, #ffd670, #f07167);
+    animation: bg 5s linear infinite;
+    opacity: 70%;
+        }
+
+        @keyframes bg {
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+.card h1{
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    color: #000;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card span{
+    color:  rgb(87, 94, 227);
+}
+.tag{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    color: rgb(255, 255, 255);
+    left: 0px;
+    background-color: #000;
+    padding-bottom: 20px;
+    font-size: 30px;
+    padding-right: 10px;
+    border-radius: 0px 10px 0px 0px;
+}
+.maincontent img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 5%;
+}
+.curve1, .curve2{
+    width: 20px;
+    height: 20px;
+    content:"";
+    position: absolute;
+
+}
+.curve1{
+    background-color: transparent;
+    bottom: 35.75%;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 10px var(--bg-color);
+}
+.curve2{
+    background-color: transparent;
+    bottom: 0px;
+    left: 41.65%;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px  10px  var(--bg-color);
+}
+/* _________________________________padding______________________ */
+.roundmain{
+    width: 270px;
+    height: 200px;
+    background-color: rgb(87, 94, 227);
+    clip-path: circle(40% at center);
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.roundmain .mySlides{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.squaremain{
+    width: 270px;
+    height: 480px;
+    background-color: rgb(234, 175, 88);
+    border-radius: 20px;
+}
+
+.project{
+    width: 650px;
+    margin: 0 auto;
+    height: 500px;
+   
+}
+.project .title{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project .projectlinks{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.project a{
+    text-decoration: none;
+    display: flex;
+    font-size: 50px;
+}
+.project .line{
+    width: 300px;
+    height: 2px;   
+    background-color: bisque;
+}
+.about{
+    margin: 25px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutimg{
+    clip-path: circle(150px at center);
+    margin-right: 50px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.abouttext p{
+    width: 400px;
+    font-size: 24px;
+}
+.aboutdetailes{
+    display: flex;
+    flex-direction: column;
+}
+.contectcv{
+    margin-top: 25px;
+    
+}
+button{
+    background-color: antiquewhite;
+    border: none;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}
+
+
+.contactmain{
+    height: 700px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+}
+.contactimg{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    position: absolute;
+    
+}
+.contacttext{
+    position: relative;
+    color: #f07167;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+
+.contacttext h2{
+    font-size: 100px;
+}
+.contactlink{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    align-self: end;
+    padding-right: 80px;
+    margin-top: 50px;
+} 
+.contacttext a{
+    text-decoration: none;
+    color: #f07167;
+    font-size: 50px;
+}
+.contacttext p{
+        color: #000;
+        font-size: 30px;
+}
